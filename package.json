@@ -1,0 +1,20 @@
+{
+    "name": "gpii-nexusctl",
+    "version": "0.1.0",
+    "description": "Nexus command line tools",
+    "license": "BSD-3-Clause",
+    "author": "GPII",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/simonbates/nexusctl.git"
+    },
+    "preferGlobal": true,
+    "bin": {
+        "nexusctl-load": "nexusctl-load.js"
+    },
+    "dependencies": {
+        "commander": "2.11.0",
+        "gpii-nexus-client": "simonbates/nexus-client#f330691bb1603160e5139bb6fb783634174fea6f",
+        "infusion": "3.0.0-dev.20170727T201856Z.8c48d077a"
+    }
+}
