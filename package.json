@@ -16,5 +16,11 @@
         "commander": "2.11.0",
         "gpii-nexus-client": "simonbates/nexus-client#f330691bb1603160e5139bb6fb783634174fea6f",
         "infusion": "3.0.0-dev.20170727T201856Z.8c48d077a"
+    },
+    "devDependencies": {
+        "eslint-config-fluid": "1.2.0",
+        "fluid-grunt-eslint": "18.1.2",
+        "grunt": "1.0.1",
+        "grunt-jsonlint": "1.1.0"
     }
 }

@@ -4,7 +4,7 @@ Nexus command line tools.
 
 ## Installation
 
-Install the `nexusctl` tools globally with:
+Install the `nexusctl` tools using the `npm` global option:
 
 ```
 npm install -g simonbates/nexusctl
@@ -16,7 +16,7 @@ This command will install the `nexusctl` tools so that they may be run from the 
 
 ### nexusctl-load
 
-Load a JSON configuration into a Nexus.
+Load a Nexus configuration JSON file into a running Nexus.
 
 ```
 $ nexusctl-load [options] <file>
