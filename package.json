@@ -14,7 +14,7 @@
     },
     "dependencies": {
         "commander": "2.11.0",
-        "gpii-nexus-client": "simonbates/nexus-client#f330691bb1603160e5139bb6fb783634174fea6f",
+        "gpii-nexus-client": "simonbates/nexus-client#GPII-2882",
         "infusion": "3.0.0-dev.20170727T201856Z.8c48d077a"
     },
     "devDependencies": {

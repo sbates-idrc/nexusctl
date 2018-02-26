@@ -51,21 +51,12 @@ if (program.port) {
 
 var nexusConfig = JSON.parse(fs.readFileSync(configFilename));
 
-var tasks = [];
-
-fluid.each(nexusConfig.defaults, function (options, gradeName) {
-    tasks.push(function () {
-        return gpii.writeNexusDefaults(nexusHost, nexusPort, gradeName, options);
-    });
+var configLoader = gpii.nexusConfigLoader({
+    nexusHost: nexusHost,
+    nexusPort: nexusPort
 });
 
-fluid.each(nexusConfig.components, function (options, componentPath) {
-    tasks.push(function () {
-        return gpii.constructNexusPeer(nexusHost, nexusPort, componentPath, options);
-    });
-});
-
-fluid.promise.sequence(tasks).then(function () {
+configLoader.loadConfig(nexusConfig).then(function () {
     // SUCCESS
 }, function (error) {
     console.error(error.message);
